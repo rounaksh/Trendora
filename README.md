@@ -48,3 +48,5 @@ I would love your contributions! Feel free to submit issues or pull requests. �
 ## 📩 **Contact**
 
 For business inquiries, reach out at rounak.0734@gmail.com
+
+## 💖 Star this repo if you like it! ⭐
