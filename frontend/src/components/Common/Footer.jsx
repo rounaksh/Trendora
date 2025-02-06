@@ -6,10 +6,10 @@ import { FiPhoneCall } from 'react-icons/fi'
 
 const Footer = () => {
     return (
-        <footer className="py-12">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+        <footer className="pt-12 pb-3 border-y border-gray-300">
+            <div className="container mx-auto grid md:grid-cols-[2fr_1fr_1fr_1fr] grid-cols-1 gap-10 px-6">
                 <div>
-                    <h3 className="text-lg text-primary-text-light mb-4 font-semibold">
+                    <h3 className="text-lg text-primary-text-light mb-2 font-semibold">
                         Newsletter
                     </h3>
                     <p className="text-primary-text-light mb-4">
@@ -33,8 +33,8 @@ const Footer = () => {
 
                 {/* Links */}
                 <div>
-                    <h3 className="text-lg text-primary-text-light mb-4 font-semibold">Shop</h3>
-                    <ul className="space-y-2 text-gray-600">
+                    <h3 className="text-lg text-primary-text-light mb-2 font-semibold">Shop</h3>
+                    <ul className="space-y-5 text-gray-600">
                         <li>
                             <Link to={'#'} className='hover:text-gray-500 transition-colors'>
                                 {`Men's Top Wear`}
@@ -60,8 +60,8 @@ const Footer = () => {
 
                 {/* Support */}
                 <div>
-                    <h3 className="text-lg text-primary-text-light mb-4 font-semibold">Support</h3>
-                    <ul className="space-y-2 text-gray-600">
+                    <h3 className="text-lg text-primary-text-light mb-2 font-semibold">Support</h3>
+                    <ul className="space-y-5 text-gray-600">
                         <li>
                             <Link to={'#'} className='hover:text-gray-500 transition-colors'>
                                 {`Contact Us`}
@@ -86,44 +86,50 @@ const Footer = () => {
                 </div>
 
                 {/* Social */}
-                <div>
-                    <h3 className="text-lg text-primary-text-light mb-4 font-semibold">Follow Us</h3>
-                    <div className="flex items-center space-x-2 mb-6">
-                        <a
-                            href="https://www.facebook.com"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
-                        >
-                            <TbBrandMeta className='w-4 h-4' />
-                        </a>
-                        <a
-                            href="https://www.facebook.com"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
-                        >
-                            <IoLogoInstagram className='w-4 h-4' />
-                        </a>
-                        <a
-                            href="https://www.facebook.com"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
-                        >
-                            <RiTwitterXLine className='w-4 h-4' />
+                <div className='flex flex-col justify-between'>
+                    <div className='mb-6 md:mb-0'>
+                        <h3 className="text-lg text-primary-text-light mb-2 font-semibold">Follow Us</h3>
+                        <div className="flex items-center space-x-2">
+                            <a
+                                href="https://www.facebook.com"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
+                            >
+                                <TbBrandMeta className='w-4 h-4' />
+                            </a>
+                            <a
+                                href="https://www.facebook.com"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
+                            >
+                                <IoLogoInstagram className='w-4 h-4' />
+                            </a>
+                            <a
+                                href="https://www.facebook.com"
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-gray-600 hover:text-gray-700 rounded-full p-1 transition-colors hover:bg-primary-bg-light'
+                            >
+                                <RiTwitterXLine className='w-4 h-4' />
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='text-gray-600 font-medium mb-2'>
+                            Call Us
+                        </p>
+                        <a href="tel:+18001234567" className="hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out text-sm">
+                            <FiPhoneCall className='w-4 h-4 text-primary-text-light inline-block mr-2' />
+                            +1 (800) 123-4567
                         </a>
                     </div>
-                    <p className='text-gray-600 font-medium'>Call Us</p>
-                    <p>
-                        <FiPhoneCall className='w-4 h-4 text-primary-text-light inline-block mr-2' />
-                        +1 (800) 123-4567
-                    </p>
                 </div>
             </div>
 
             {/* Copyright */}
-            <div className="container mx-auto mt-12 px-4 border-t border-gray-200 pt-2">
+            <div className="container mx-auto mt-5 md:mt-12 border-t border-gray-200 pt-2">
                 <p className="text-gray-600 text-center">© {new Date().getFullYear()} Trendora. Made with ❤️ by <a href="https://github.com/rounaksh" className='font-semibold'>Rounak Sharma</a>.</p>
             </div>
         </footer>
